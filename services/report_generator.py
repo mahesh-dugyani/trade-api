@@ -1,23 +1,20 @@
 def generate_markdown(sector, analysis):
 
-    # Clean AI text
-    clean_analysis = analysis.replace("\\n", "\n")
+    clean = analysis.replace("\\n", "\n")
 
-    return f"""# 📊 Market Analysis Report: {sector.title()}
+    return f"""📊 Market Analysis Report: {sector.title()}
 
-##  Overview
-{clean_analysis}
+Overview:
+{clean}
 
-##  Opportunities
-- Growth potential in India
-- Increasing demand
+Opportunities:
+- Growth potential
 - Investment opportunities
 
-##  Risks
-- High competition
-- Regulatory challenges
-- Market volatility
+Risks:
+- Competition
+- Regulations
 
-##  Future Outlook
-The {sector} sector shows promising growth in India.
+Future Outlook:
+Strong growth expected.
 """
